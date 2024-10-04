@@ -1,0 +1,160 @@
+/*
+Aquí se definen los estilos generales del cuerpo (body) de la página:
+
+font-family: sans-serif;: Se establece una fuente genérica sin serif (como Arial o Helvetica) para todo el texto del body.
+display: flex;: Se utiliza el modelo de caja flexible (flexbox) para organizar los elementos dentro del body.
+flex-direction: column;: Los elementos se apilarán verticalmente, uno debajo del otro.
+align-items: center;: Los elementos se centrarán verticalmente.
+justify-content: center;: Los elementos se centrarán horizontalmente.
+min-height: 100vh;: El body ocupará al menos el 100% de la altura de la ventana gráfica (viewport).
+background-color: #f5f5f5;: Se establece un color de fondo gris claro para el body.
+margin: 0;: Se eliminan los márgenes predeterminados del body.
+*/
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+/*
+Estilos para las etiquetas <h1>:
+
+color: #333;: Se establece un color gris oscuro para el texto del título.
+margin-bottom: 2rem;: Se agrega un margen inferior de 2 "rem" (unidad relativa al tamaño de fuente del elemento raíz) al título.
+*/
+h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/*
+Estilos para los inputs de tipo "text":
+
+padding: 1rem;: Se agrega un relleno interno de 1 "rem" alrededor del texto dentro del input.
+border-radius: 5px;: Se redondean las esquinas del input con un radio de 5 píxeles.
+border: 1px solid #ccc;: Se establece un borde sólido de 1 píxel y color gris claro para el input.
+width: 300px;: Se establece un ancho fijo de 300 píxeles para el input.
+margin-bottom: 1rem;: Se agrega un margen inferior de 1 "rem" al input.
+*/
+input[type="text"] {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+
+/*
+Estilos para los inputs de tipo "text" cuando están enfocados (seleccionados):
+
+outline: none;: Se elimina el contorno predeterminado que aparece al enfocar el input.
+border-color: #007bff;: Se cambia el color del borde a un azul (#007bff) cuando el input está enfocado.
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);: Se agrega una sombra suave de color azul alrededor del input cuando está enfocado.
+*/
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*
+Estilos para los botones de tipo "submit":
+
+background-color: #007bff;: Se establece un color de fondo azul (#007bff) para el botón.
+color: white;: Se establece el color del texto del botón a blanco.
+padding: 1rem 2rem;: Se agrega un relleno interno de 1 "rem" arriba y abajo, y 2 "rem" a los lados del texto del botón.
+border: none;: Se elimina el borde predeterminado del botón.
+border-radius: 5px;: Se redondean las esquinas del botón con un radio de 5 píxeles.
+cursor: pointer;: El cursor del ratón cambiará a una mano cuando se coloque sobre el botón, indicando que es interactivo.
+transition: background-color 0.3s ease;: Se establece una transición suave de 0.3 segundos para el cambio de color de fondo del botón.
+*/
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/*
+Estilos para los botones de tipo "submit" cuando el ratón se coloca sobre ellos:
+
+background-color: #0062cc;: Se cambia el color de fondo del botón a un azul más oscuro (#0062cc) cuando el ratón se coloca sobre él.
+*/
+input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+/*
+Estilos para la lista de URLs acortadas (#shortened-urls):
+
+list-style: none;: Se elimina el estilo de lista predeterminado (viñetas o números).
+padding: 0;: Se elimina el relleno interno predeterminado de la lista.
+margin-top: 2rem;: Se agrega un margen superior de 2 "rem" a la lista.
+*/
+#shortened-urls {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+/*
+Estilos para cada elemento de lista (<li>) dentro de la lista de URLs acortadas:
+
+background-color: #fff;: Se establece un color de fondo blanco para cada elemento de lista.
+padding: 1rem;: Se agrega un relleno interno de 1 "rem" alrededor del contenido de cada elemento de lista.
+border-radius: 5px;: Se redondean las esquinas de cada elemento de lista con un radio de 5 píxeles.
+margin-bottom: 1rem;: Se agrega un margen inferior de 1 "rem" a cada elemento de lista.
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);: Se agrega una sombra suave debajo de cada elemento de lista para darles profundidad.
+display: flex;: Se utiliza el modelo de caja flexible (flexbox) para organizar los elementos dentro de cada elemento de lista.
+justify-content: space-between;: Los elementos dentro de cada elemento de lista se distribuirán con espacio máximo entre ellos.
+align-items: center;: Los elementos dentro de cada elemento de lista se centrarán verticalmente.
+*/
+#shortened-urls li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+Estilos para los enlaces (<a>) dentro de la lista de URLs acortadas:
+
+color: #007bff;: Se establece un color azul (#007bff) para el texto de los enlaces.
+text-decoration: none;: Se elimina el subrayado predeterminado de los enlaces.
+*/
+#shortened-urls a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/*
+Estilos para los enlaces (<a>) dentro de la lista de URLs acortadas cuando el ratón se coloca sobre ellos:
+
+text-decoration: underline;: Se agrega un subrayado al texto de los enlaces cuando el ratón se coloca sobre ellos.
+*/
+#shortened-urls a:hover {
+  text-decoration: underline;
+}
+
+/*
+Esta sección define estilos que solo se aplicarán cuando el ancho de la pantalla sea igual o menor a 400 píxeles:
+
+input[type="text"] { width: 100%; }: En pantallas pequeñas, los inputs de tipo "text" ocuparán el 100% del ancho disponible de su contenedor padre.
+*/
+@media (max-width: 400px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
